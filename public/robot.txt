@@ -1,0 +1,30 @@
+# Robots.txt optimisé pour le SEO
+User-agent: *
+Allow: /
+
+# Optimisations pour les moteurs de recherche
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Bloque les bots malveillants
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap
+Sitemap: https://gaetan-rogeron.com/sitemap.xml
+
+# Fichiers à exclure (si nécessaire)
+# Disallow: /admin/
+# Disallow: /_next/
+# Disallow: /api/

@@ -1,11 +1,14 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
+/* Optimisation des polices avec font-display */
 @font-face {
   font-family: 'europalight';
   src: url('/fonts/Europa-Light.woff2.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap; /* Améliore les performances de chargement */
 }
 
 @font-face {
@@ -13,6 +16,7 @@
   src: url('/fonts/ObjektivMk1_Trial_Th.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,36 +24,185 @@
   src: url('/fonts/FontsFree-Net-arboria2.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
+/* Variables CSS pour une maintenance plus facile */
+:root {
+  --font-europa: 'europalight', ui-sans-serif, system-ui, sans-serif;
+  --font-objektiv: 'objektivmk1', ui-sans-serif, system-ui, sans-serif;
+  --font-arboria: 'arboriabook', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Styles de base optimisés */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-objektiv);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles typographiques avec fallbacks */
 h1 {
-  @apply text-9xl;
-  font-family: 'arboriabook', sans-serif;
+  @apply text-6xl md:text-9xl;
+  font-family: var(--font-arboria);
+  font-weight: normal;
+  line-height: 1.1;
 }
 
 h2 {
-  @apply text-7xl;
-  font-family: 'arboriabook', sans-serif;
+  @apply text-4xl md:text-7xl;
+  font-family: var(--font-arboria);
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 h3 {
-  @apply text-3xl;
-  font-family: 'arboriabook', sans-serif;
+  @apply text-2xl md:text-3xl;
+  font-family: var(--font-arboria);
+  font-weight: normal;
+  line-height: 1.3;
 }
 
 h4 {
-  @apply text-xl;
-  font-family: 'europalight', sans-serif;
+  @apply text-lg md:text-xl;
+  font-family: var(--font-europa);
+  font-weight: normal;
+  line-height: 1.4;
 }
 
 p {
-  @apply text-lg font-bold;
-  font-family: 'objektivmk1', sans-serif;
-
+  @apply text-base md:text-lg font-bold;
+  font-family: var(--font-objektiv);
+  line-height: 1.6;
 }
 
 h5, li {
-  @apply text-base font-bold;
-  font-family: 'objektivmk1', sans-serif;
+  @apply text-sm md:text-base font-bold;
+  font-family: var(--font-objektiv);
+  line-height: 1.5;
+}
 
+/* Classes utilitaires pour les polices */
+.font-europa {
+  font-family: var(--font-europa);
+}
+
+.font-objektiv {
+  font-family: var(--font-objektiv);
+}
+
+.font-arboria {
+  font-family: var(--font-arboria);
+}
+
+/* Optimisations pour les images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optimisations pour les liens */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth scrolling pour les ancres */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimisations pour les animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus states pour l'accessibilité */
+*:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Optimisations pour les carousels */
+.carousel-container {
+  overflow: hidden;
+}
+
+/* Amélioration du contraste pour l'accessibilité */
+.bg-gray-900 {
+  background-color: #1a1a1a; /* Contraste amélioré */
+}
+
+/* Loading states */
+.loading-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Optimisations pour les performances */
+.will-change-transform {
+  will-change: transform;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
 }
