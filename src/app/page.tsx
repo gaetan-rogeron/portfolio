@@ -48,16 +48,16 @@ export default function Home() {
                         <h2 className="text-right pb-8 px-30 pt-10">Gaëtan Rogeron</h2>
                         <h3 className="text-right pb-8 px-30">Développeur Web Fullstack Freelance</h3>
                         <p className="text-right pl-60 px-30">
-                            Je m’appelle Gaëtan Rogeron, développeur web
+                            Je m&apos;appelle Gaëtan Rogeron, développeur web
                             fullstack et freelance basé en France.
                             Étudiant en double licence Mathématiques et
-                            Informatique à l’Université Côte d’Azur,
+                            Informatique à l&apos;Université Côte d&apos;Azur,
                             je travaille principalement avec Next.js,
                             Payload CMS, Docker et PostgreSQL.
                             Je porte une attention particulière à la qualité du code,
                             à la sécurité des applications et à la performance.
-                            Je m’intéresse également à Rust et à la cybersécurité,
-                            dans une démarche d’amélioration continue.
+                            Je m&apos;intéresse également à Rust et à la cybersécurité,
+                            dans une démarche d&apos;amélioration continue.
                         </p>
                     </div>
                 </div>
@@ -99,8 +99,8 @@ export default function Home() {
                                 </a>
                             </CarouselItem>
                         </CarouselContent>
-                            <CarouselPrevious variant="default"/>
-                            <CarouselNext variant="default"/>
+                        <CarouselPrevious variant="default"/>
+                        <CarouselNext variant="default"/>
                     </Carousel>
                 </div>
             </section>
@@ -140,9 +140,9 @@ export default function Home() {
                     </div>
                     <h2>Emma Zepter</h2>
                 </div>
-                <p className="text-right pb-6">Création du site temporaire “Launching Soon” pour Emma Zepter,
-                    avec intégration d’un système d’inscription
-                    à la newsletter via formulaire d’email</p>
+                <p className="text-right pb-6">Création du site temporaire &quot;Launching Soon&quot; pour Emma Zepter,
+                    avec intégration d&apos;un système d&apos;inscription
+                    à la newsletter via formulaire d&apos;email</p>
                 <div className="flex items-center">
                     <Image src={"/images/EmmaZepter/EmmaZepter_1.png"} alt={""} width={2000} height={2000} style={{ objectFit: "contain" }} />
                 </div>
@@ -173,14 +173,14 @@ export default function Home() {
                             className="object-cover w-full"
                         />
                         <p>
-                            J'ai également contribué au développement des outils permettant à l'IA de connaître en temps réel les créneaux disponibles et de gérer automatiquement la prise de rendez-vous.
+                            J&apos;ai également contribué au développement des outils permettant à l&apos;IA de connaître en temps réel les créneaux disponibles et de gérer automatiquement la prise de rendez-vous.
                         </p>
                         <p>
-                            En complément, j'ai pris en charge les fonctionnalités suivantes :
+                            En complément, j&apos;ai pris en charge les fonctionnalités suivantes :
                         </p>
                         <ul className="list-disc list-inside">
-                            <li>Intégration d'un chatbot intelligent relié à l'IA avec accès aux outils internes via le serveur Node.js</li>
-                            <li>Développement d'une page de chat permettant aux utilisateurs de visualiser l'historique des conversations</li>
+                            <li>Intégration d&apos;un chatbot intelligent relié à l&apos;IA avec accès aux outils internes via le serveur Node.js</li>
+                            <li>Développement d&apos;une page de chat permettant aux utilisateurs de visualiser l&apos;historique des conversations</li>
                             <li>Création de la page de paramètres (langue, avatar, informations personnelles)</li>
                             <li>Internationalisation complète du dashboard en 5 langues</li>
                             <li>Développement de la page de connexion (signin)</li>
@@ -189,10 +189,10 @@ export default function Home() {
 
                     <div className="w-full lg:w-[40%] text-justify flex flex-col gap-6">
                         <p>
-                            Participation au développement du dashboard SaaS de Rendez-vous.ai, une plateforme d'automatisation des appels et de la prise de rendez-vous par IA.
+                            Participation au développement du dashboard SaaS de Rendez-vous.ai, une plateforme d&apos;automatisation des appels et de la prise de rendez-vous par IA.
                         </p>
                         <p>
-                            J'ai conçu et développé l'ensemble de la gestion des événements en interne, reposant sur Payload CMS :
+                            J&apos;ai conçu et développé l&apos;ensemble de la gestion des événements en interne, reposant sur Payload CMS :
                         </p>
                         <ul className="list-disc list-inside">
                             <li>Calendrier personnalisable (vues jour, semaine, mois)</li>
@@ -211,10 +211,10 @@ export default function Home() {
                 </div>
                 <div className="px-70 pt-20">
                     <p className="pb-6">
-                        Pour l'ensemble de ces fonctionnalités, j'ai assuré le développement frontend, backend et infrastructure, sans recourir à des solutions clés-en-main, afin de garantir flexibilité, sécurité et maîtrise technique.
+                        Pour l&apos;ensemble de ces fonctionnalités, j&apos;ai assuré le développement frontend, backend et infrastructure, sans recourir à des solutions clés-en-main, afin de garantir flexibilité, sécurité et maîtrise technique.
                     </p>
                     <p>
-                        Ces réalisations s'inscrivent dans le cadre plus large de Rendez-vous.ai, qui propose un agent vocal intelligent disponible 24/7 pour automatiser la prise d'appels et de rendez-vous.
+                        Ces réalisations s&apos;inscrivent dans le cadre plus large de Rendez-vous.ai, qui propose un agent vocal intelligent disponible 24/7 pour automatiser la prise d&apos;appels et de rendez-vous.
                     </p>
                     <a href="https://rendez-vous.ai/" target="_blank" className="hover:underline"><p>Site vitrine</p></a>
                 </div>
@@ -233,9 +233,9 @@ export default function Home() {
                         Absolument Parfumeur.
                     </p>
                     <h5 className="pl-60">
-                        J’ai pris en charge l’architecture technique et le développement fullstack :
-                        Le design a été fourni par le client, et j’ai assuré l’intégration technique et le développement de l’ensemble du site
-                        jusqu’à sa finalisation.
+                        J&apos;ai pris en charge l&apos;architecture technique et le développement fullstack :
+                        Le design a été fourni par le client, et j&apos;ai assuré l&apos;intégration technique et le développement de l&apos;ensemble du site
+                        jusqu&apos;à sa finalisation.
                     </h5>
                 </div>
 
@@ -264,7 +264,7 @@ export default function Home() {
 
             <footer className="bg-[#262626] text-white px-30 py-17" id="contact">
                 <h3>Contact</h3>
-                <h4>Vous avez un projet ou une question ? N’hésitez pas à me contacter :</h4>
+                <h4>Vous avez un projet ou une question ? N&apos;hésitez pas à me contacter :</h4>
 
                 <div className="flex flex-wrap items-center justify-between py-4 px-40">
                     <a href="https://www.linkedin.com/in/ga%C3%ABtan-rogeron-4221322a1/" target="_blank" className="flex items-center gap-4 hover:opacity-80">
