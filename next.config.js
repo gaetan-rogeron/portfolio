@@ -1,20 +1,26 @@
 /** @type {import('next').NextConfig} */
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+    enabled: process.env.ANALYZE === 'true',
+})
+
 const nextConfig = {
     // Optimisations de performance
     experimental: {
         optimizeCss: true,
         scrollRestoration: true,
+        // Optimisations PNPM
+        esmExternals: true,
+        serverComponentsExternalPackages: [],
     },
 
     // Configuration des images
     images: {
         formats: ['image/webp', 'image/avif'],
-        minimumCacheTTL: 31536000, // 1 an de cache
+        minimumCacheTTL: 31536000,
         dangerouslyAllowSVG: true,
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
         deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
         imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-        domains: [], // Ajoutez vos domaines d'images externes si nécessaire
     },
 
     // Optimisations générales
@@ -22,6 +28,25 @@ const nextConfig = {
     poweredByHeader: false,
     reactStrictMode: true,
     swcMinify: true,
+
+    // Optimisations webpack pour PNPM
+    webpack: (config, { dev, isServer }) => {
+        // Optimisations pour PNPM
+        config.resolve.symlinks = false;
+
+        // Optimisations pour la production
+        if (!dev && !isServer) {
+            config.optimization.splitChunks.chunks = 'all';
+        }
+
+        // Support pour les fichiers SVG
+        config.module.rules.push({
+            test: /\.svg$/,
+            use: ['@svgr/webpack']
+        });
+
+        return config;
+    },
 
     // Headers de sécurité
     async headers() {
@@ -52,14 +77,10 @@ const nextConfig = {
                     {
                         key: 'Referrer-Policy',
                         value: 'origin-when-cross-origin'
-                    },
-                    {
-                        key: 'Permissions-Policy',
-                        value: 'camera=(), microphone=(), geolocation=()'
                     }
                 ],
             },
-            // Cache optimisé pour les assets statiques
+            // Cache pour assets statiques
             {
                 source: '/images/(.*)',
                 headers: [
@@ -81,43 +102,10 @@ const nextConfig = {
         ]
     },
 
-    // Redirections si nécessaire
-    async redirects() {
-        return [
-            // Exemple de redirection
-            // {
-            //   source: '/old-page',
-            //   destination: '/new-page',
-            //   permanent: true,
-            // },
-        ]
-    },
-
-    // Variables d'environnement publiques
+    // Variables d'environnement
     env: {
-        SITE_URL: process.env.SITE_URL || 'https://gaetan-rogeron.com',
+        SITE_URL: process.env.SITE_URL || 'https://votre-domaine.com',
     },
-
-    // Optimisations webpack
-    webpack: (config, { dev, isServer }) => {
-        // Optimisations pour la production
-        if (!dev && !isServer) {
-            config.optimization.splitChunks.chunks = 'all';
-        }
-
-        // Support pour les fichiers SVG en tant que composants
-        config.module.rules.push({
-            test: /\.svg$/,
-            use: ['@svgr/webpack']
-        });
-
-        return config;
-    },
-
-    // Analyse du bundle (activez si nécessaire)
-    // bundleAnalyzer: {
-    //   enabled: process.env.ANALYZE === 'true',
-    // },
 }
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig);

@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
+        './app/**/*.{js,ts,jsx,tsx,mdx}',
         './pages/**/*.{js,ts,jsx,tsx,mdx}',
         './components/**/*.{js,ts,jsx,tsx,mdx}',
-        './app/**/*.{js,ts,jsx,tsx,mdx}',
         './src/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
@@ -52,26 +52,8 @@ module.exports = {
         },
     },
     plugins: [],
-    // Optimisations pour la production
+    // Optimisations pour PNPM
     corePlugins: {
         preflight: true,
     },
-    // Purge des classes inutilisées
-    purge: {
-        enabled: process.env.NODE_ENV === 'production',
-        content: [
-            './pages/**/*.{js,ts,jsx,tsx}',
-            './components/**/*.{js,ts,jsx,tsx}',
-            './app/**/*.{js,ts,jsx,tsx}',
-        ],
-        options: {
-            safelist: [
-                'font-europa',
-                'font-objektiv',
-                'font-arboria',
-                'animate-fade-in',
-                'animate-slide-up',
-            ],
-        },
-    },
-}
+};
