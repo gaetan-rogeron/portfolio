@@ -23,7 +23,7 @@
 }
 
 h1 {
-  @apply text-9xl;
+  @apply text-8xl lg:text-9xl;
   font-family: 'arboriabook', sans-serif;
 }
 
