@@ -11,7 +11,7 @@ export default function Home() {
                         alt={""}
                         width={120}
                         height={32}
-                        className="lg:w-[8vw] lg:h-[2vh]"
+                        className="lg:w-[10vw] lg:h-[9vh]"
                         style={{ objectFit: "cover" }}
                     />
                     <div>
