@@ -7,18 +7,47 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
+// Imports des logos
+import logoSvg from "../../public/images/LOGO.svg";
+import linkedinLogo from "../../public/images/linkedin-logo-vector.svg";
+import githubLogo from "../../public/images/icons8-github.svg";
+import mailLogo from "../../public/images/mail logo.svg";
+
+// Imports des photos de profil
+import profilePhoto from "../../public/images/photo_2_2025-06-30_23-21-45.jpg";
+
+// Imports des images FliteWatch
+import fliteWatch1 from "../../public/images/FliteWatch/FliteWatch_1.png";
+import fliteWatch2 from "../../public/images/FliteWatch/FliteWatch_2.png";
+import fliteWatch3 from "../../public/images/FliteWatch/FliteWatch_3.png";
+
+// Imports des images EmmaZepter
+import emmaZepter1 from "../../public/images/EmmaZepter/EmmaZepter_1.png";
+
+// Imports des images Rendez-vous.ai
+import rdvAi1 from "../../public/images/Rendez-vous-ai/rdv_1.png";
+import rdvAi2 from "../../public/images/Rendez-vous-ai/rdv_2.png";
+import rdvAi3 from "../../public/images/Rendez-vous-ai/rdv_3.png";
+import rdvAi5 from "../../public/images/Rendez-vous-ai/rdv_5.png";
+
+// Imports des images Absolument Parfumeur
+import ap1 from "../../public/images/Absolument-Parfumeur/AP_1.png";
+import ap2 from "../../public/images/Absolument-Parfumeur/AP_2.png";
+import ap3 from "../../public/images/Absolument-Parfumeur/AP_3.png";
+
 export default function Home() {
   return (
     <>
       <header className="bg-[#f2f2f2] w-full py-[1vh] px-[1vw] lg:px-[2vw]">
         <div className="flex items-center justify-between">
           <Image
-            src={"/images/LOGO.svg"}
+            src={logoSvg}
             alt={""}
             width={120}
             height={32}
             className="lg:w-[10vw] lg:h-[9vh]"
             style={{ objectFit: "cover" }}
+            priority={true}
           />
           <div>
             <nav className="flex flex-col sm:flex-row space-y-[0.5vh] sm:space-y-0 sm:space-x-[2vw] lg:space-x-[8vw]">
@@ -53,7 +82,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-[4vh] lg:gap-0">
           <div className="px-[2vw] sm:px-[3vw] lg:px-[6vw] w-full lg:w-auto">
             <Image
-              src={"/images/photo_2_2025-06-30_23-21-45.jpg"}
+              src={profilePhoto}
               alt={""}
               className="w-full lg:w-[90vw] h-auto object-cover rounded-tr-[3vh] lg:rounded-tr-[100px]"
               width={500}
@@ -97,11 +126,12 @@ export default function Home() {
               <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/3 px-[1vw] lg:px-[2vw] flex flex-col items-center">
                 <a href="#flitewatch">
                   <Image
-                    src="/images/FliteWatch/FliteWatch_1.png"
+                    src={fliteWatch1}
                     alt="Flite Watch"
                     width={400}
                     height={300}
                     className="rounded-[2vh] lg:rounded-[3vh] object-cover w-full h-[24vh] sm:h-[30vh] lg:h-[36vh]"
+                    placeholder="blur"
                   />
                   <p className="text-center mt-[2vh] text-[1.8vh] sm:text-[2vh]">
                     Flite Watch
@@ -111,11 +141,12 @@ export default function Home() {
               <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/3 px-[1vw] lg:px-[2vw] flex flex-col items-center">
                 <a href="#emmazepter">
                   <Image
-                    src="/images/EmmaZepter/EmmaZepter_1.png"
+                    src={emmaZepter1}
                     alt="Emma Zepter"
                     width={400}
                     height={300}
                     className="rounded-[2vh] lg:rounded-[3vh] object-cover w-full h-[24vh] sm:h-[30vh] lg:h-[36vh]"
+                    placeholder="blur"
                   />
                   <p className="text-center mt-[2vh] text-[1.8vh] sm:text-[2vh]">
                     Emma Zepter
@@ -125,11 +156,12 @@ export default function Home() {
               <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/3 px-[1vw] lg:px-[2vw] flex flex-col items-center">
                 <a href="#rendezvousai">
                   <Image
-                    src="/images/Rendez-vous-ai/rdv_1.png"
+                    src={rdvAi1}
                     alt="Rendez-vous.ia"
                     width={400}
                     height={300}
                     className="rounded-[2vh] lg:rounded-[3vh] object-cover w-full h-[24vh] sm:h-[30vh] lg:h-[36vh]"
+                    placeholder="blur"
                   />
                   <p className="text-center mt-[2vh] text-[1.8vh] sm:text-[2vh]">
                     Rendez-vous.ia
@@ -139,11 +171,12 @@ export default function Home() {
               <CarouselItem className="basis-full sm:basis-1/2 lg:basis-1/3 px-[1vw] lg:px-[2vw] flex flex-col items-center">
                 <a href="#absolumentparfumeur">
                   <Image
-                    src="/images/Absolument-Parfumeur/AP_2.png"
+                    src={ap2}
                     alt="Absolument Parfumeur"
                     width={400}
                     height={300}
                     className="rounded-[2vh] lg:rounded-[3vh] object-cover w-full h-[24vh] sm:h-[30vh] lg:h-[36vh]"
+                    placeholder="blur"
                   />
                   <p className="text-center mt-[2vh] text-[1.8vh] sm:text-[2vh]">
                     Absolument Parfumeur
@@ -184,29 +217,32 @@ export default function Home() {
           <CarouselContent>
             <CarouselItem>
               <Image
-                src={"/images/FliteWatch/FliteWatch_1.png"}
+                src={fliteWatch1}
                 alt={"Flite Watch screenshot 1"}
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover rounded-[1vh]"
+                placeholder="blur"
               />
             </CarouselItem>
             <CarouselItem>
               <Image
-                src={"/images/FliteWatch/FliteWatch_2.png"}
+                src={fliteWatch2}
                 alt={"Flite Watch screenshot 2"}
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover rounded-[1vh]"
+                placeholder="blur"
               />
             </CarouselItem>
             <CarouselItem>
               <Image
-                src={"/images/FliteWatch/FliteWatch_3.png"}
+                src={fliteWatch3}
                 alt={"Flite Watch screenshot 3"}
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover rounded-[1vh]"
+                placeholder="blur"
               />
             </CarouselItem>
           </CarouselContent>
@@ -245,12 +281,13 @@ export default function Home() {
         </p>
         <div className="flex items-center">
           <Image
-            src={"/images/EmmaZepter/EmmaZepter_1.png"}
+            src={emmaZepter1}
             alt={"Emma Zepter website"}
             width={2000}
             height={2000}
             className="w-full h-auto object-contain rounded-[1vh]"
             style={{ objectFit: "contain" }}
+            placeholder="blur"
           />
         </div>
         <a
@@ -278,18 +315,20 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-[4vh]">
           <div className="flex flex-col gap-[3vh] w-full lg:w-[40%]">
             <Image
-              src="/images/Rendez-vous-ai/rdv_3.png"
+              src={rdvAi3}
               alt="Dashboard Rendez-vous.ai"
               width={800}
               height={600}
               className="rounded-tr-[3vh] lg:rounded-tr-[6vh] object-cover w-full"
+              placeholder="blur"
             />
             <Image
-              src="/images/Rendez-vous-ai/rdv_2.png"
+              src={rdvAi2}
               alt="Calendrier Rendez-vous.ai"
               width={800}
               height={600}
               className="object-cover w-full rounded-[1vh]"
+              placeholder="blur"
             />
             <p className="text-[1.8vh] sm:text-[2vh]">
               J&apos;ai également contribué au développement des outils
@@ -344,11 +383,12 @@ export default function Home() {
               </li>
             </ul>
             <Image
-              src="/images/Rendez-vous-ai/rdv_5.png"
+              src={rdvAi5}
               alt="Calendrier Rendez-vous.ai"
               width={800}
               height={600}
               className="object-cover w-full pt-[3vh] lg:pt-[6vh] rounded-[1vh]"
+              placeholder="blur"
             />
           </div>
         </div>
@@ -403,29 +443,32 @@ export default function Home() {
           <CarouselContent>
             <CarouselItem>
               <Image
-                src={"/images/Absolument-Parfumeur/AP_2.png"}
+                src={ap2}
                 alt={"Absolument Parfumeur screenshot 1"}
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover rounded-[1vh]"
+                placeholder="blur"
               />
             </CarouselItem>
             <CarouselItem>
               <Image
-                src={"/images/Absolument-Parfumeur/AP_1.png"}
+                src={ap1}
                 alt={"Absolument Parfumeur screenshot 2"}
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover rounded-[1vh]"
+                placeholder="blur"
               />
             </CarouselItem>
             <CarouselItem>
               <Image
-                src={"/images/Absolument-Parfumeur/AP_3.png"}
+                src={ap3}
                 alt={"Absolument Parfumeur screenshot 3"}
                 width={1200}
                 height={800}
                 className="w-full h-auto object-cover rounded-[1vh]"
+                placeholder="blur"
               />
             </CarouselItem>
           </CarouselContent>
@@ -472,7 +515,7 @@ export default function Home() {
             rel="noreferrer"
           >
             <Image
-              src="/images/linkedin-logo-vector.svg"
+              src={linkedinLogo}
               alt="LinkedIn"
               width={48}
               height={48}
@@ -487,7 +530,7 @@ export default function Home() {
             rel="noreferrer"
           >
             <Image
-              src="/images/icons8-github.svg"
+              src={githubLogo}
               alt="GitHub"
               width={48}
               height={48}
@@ -500,7 +543,7 @@ export default function Home() {
             className="flex items-center gap-[2vw] hover:opacity-80"
           >
             <Image
-              src="/images/mail%20logo.svg"
+              src={mailLogo}
               alt="Email"
               width={48}
               height={48}
