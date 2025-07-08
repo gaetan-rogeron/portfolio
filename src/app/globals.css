@@ -2,54 +2,53 @@
 @import "tw-animate-css";
 
 @font-face {
-  font-family: 'europalight';
-  src: url('/fonts/Europa-Light.woff2.ttf') format('truetype');
+  font-family: "europalight";
+  src: url("/fonts/Europa-Light.woff2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'objektivmk1';
-  src: url('/fonts/ObjektivMk1_Trial_Th.ttf') format('truetype');
+  font-family: "objektivmk1";
+  src: url("/fonts/ObjektivMk1_Trial_Th.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'arboriabook';
-  src: url('/fonts/FontsFree-Net-arboria2.ttf') format('truetype');
+  font-family: "arboriabook";
+  src: url("/fonts/FontsFree-Net-arboria2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 h1 {
   @apply text-8xl lg:text-9xl;
-  font-family: 'arboriabook', sans-serif;
+  font-family: "arboriabook", sans-serif;
 }
 
 h2 {
   @apply text-7xl;
-  font-family: 'arboriabook', sans-serif;
+  font-family: "arboriabook", sans-serif;
 }
 
 h3 {
   @apply text-3xl;
-  font-family: 'arboriabook', sans-serif;
+  font-family: "arboriabook", sans-serif;
 }
 
 h4 {
   @apply text-xl;
-  font-family: 'europalight', sans-serif;
+  font-family: "europalight", sans-serif;
 }
 
 p {
   @apply text-lg font-bold;
-  font-family: 'objektivmk1', sans-serif;
-
+  font-family: "objektivmk1", sans-serif;
 }
 
-h5, li {
+h5,
+li {
   @apply text-base font-bold;
-  font-family: 'objektivmk1', sans-serif;
-
+  font-family: "objektivmk1", sans-serif;
 }
