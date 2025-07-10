@@ -8,7 +8,7 @@ export default function AboutSection() {
         <div className="px-[2vw] sm:px-[3vw] lg:px-[6vw] w-full lg:w-auto">
           <Image
             src={profilePhoto}
-            alt={""}
+            alt={"profile photo of Gaëtan Rogeron"}
             className="w-full lg:w-[90vw] h-auto object-cover rounded-tr-[3vh] lg:rounded-tr-[100px]"
             width={500}
             height={500}

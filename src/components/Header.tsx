@@ -7,7 +7,7 @@ export default function Header() {
       <div className="flex items-center justify-between">
         <Image
           src={logoSvg}
-          alt={""}
+          alt={"Gaëtan Rogeron logo"}
           width={120}
           height={32}
           className="lg:w-[10vw] lg:h-[9vh]"
