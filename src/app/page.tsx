@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <h1 className="text-center py-[6vh] sm:py-[8vh] lg:py-[12vh] text-[3vh] sm:text-[4vh] lg:text-[5vh]">
+      <h1 className="text-center py-[6vh] sm:py-[8vh] lg:py-[12vh]">
         Portfolio
       </h1>
       <AboutSection />

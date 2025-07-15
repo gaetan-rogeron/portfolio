@@ -17,7 +17,7 @@ export default function AboutSection() {
         </div>
         <div className="px-[2vw] sm:px-[3vw] lg:px-[2vw] w-full lg:w-auto">
           <div className="flex justify-center lg:justify-end px-[2vw] lg:px-[6vw]">
-            <div className="w-[20vw] sm:w-[15vw] lg:w-[13vw] h-[0.2vh] bg-black"></div>
+            <div className="w-[40vw] sm:w-[15vw] lg:w-[13vw] h-[0.2vh] bg-black"></div>
           </div>
           <h2 className="text-center lg:text-right pb-[2vh] lg:pb-[4vh] px-[2vw] lg:px-[6vw] pt-[3vh] lg:pt-[5vh] text-[2.5vh] sm:text-[3vh] lg:text-[3.5vh]">
             Gaëtan Rogeron
