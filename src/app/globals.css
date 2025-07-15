@@ -8,12 +8,12 @@
 }
 
 h1 {
-  @apply text-7xl sm:text-8 md: lg:text-9xl;
+  @apply text-7xl md:text-8xl lg:text-9xl;
   font-family: var(--font-arboria), sans-serif;
 }
 
 h2 {
-  @apply text-7xl;
+  @apply text-6xl lg:text-7xl;
   font-family: var(--font-arboria), sans-serif;
 }
 
@@ -28,7 +28,7 @@ h4 {
 }
 
 p {
-  @apply text-lg font-bold;
+  @apply text-base lg:text-lg font-bold;
   font-family: var(--font-objektiv), sans-serif;
 }
 

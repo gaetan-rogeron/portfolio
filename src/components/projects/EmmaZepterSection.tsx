@@ -3,10 +3,7 @@ import emmaZepter1 from "../../../public/images/EmmaZepter/EmmaZepter_1.png";
 
 export default function EmazeSection() {
   return (
-    <section
-      className="px-[2vw] sm:px-[3vw] lg:px-[6vw] py-[8vh] lg:py-[16vh]"
-      id="emmazepter"
-    >
+    <section className="px-[2vw] py-[8vh] lg:py-[16vh]" id="emmazepter">
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[4vh] lg:py-[7vh] gap-[2vh] sm:gap-0">
         <div className="flex justify-start sm:justify-end w-full sm:w-auto order-2 sm:order-1">
           <div className="w-[40vw] sm:w-[50vw] lg:w-[60vw] h-[0.2vh] bg-black"></div>

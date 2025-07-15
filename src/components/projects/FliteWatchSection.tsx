@@ -13,18 +13,16 @@ import fliteWatch3 from "../../../public/images/FliteWatch/FliteWatch_3.png";
 export default function FliteWatchSection() {
   return (
     <section
-      className="bg-[#262626] text-white px-[2vw] sm:px-[3vw] lg:px-[6vw] pb-[4vh] lg:pb-[5vh]"
+      className="bg-[#262626] text-white px-[2vw] pb-[8vh]"
       id="flitewatch"
     >
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between py-[4vh] lg:py-[7vh] gap-[2vh] sm:gap-0">
-        <h2 className="text-[2.5vh] sm:text-[3vh] lg:text-[3.5vh]">
-          Flite Watch
-        </h2>
-        <div className="flex justify-end w-full sm:w-auto">
+      <div className="flex items-center justify-between py-[4vh] lg:py-[7vh] sm:gap-0">
+        <h2>Flite Watch</h2>
+        <div className="flex justify-end w-auto">
           <div className="w-[40vw] sm:w-[50vw] lg:w-[60vw] h-[0.2vh] bg-white"></div>
         </div>
       </div>
-      <p className="pb-[3vh] lg:pb-[5vh] pr-0 sm:pr-[8vw] lg:pr-[26vw] text-left text-[1.8vh] sm:text-[2vh]">
+      <p className="pb-[5vh] pr-0 sm:pr-[8vw] lg:pr-[26vw] text-left">
         Développement de pages statiques pour le site vitrine de la compagnie
         Flite Watch. Travail axé sur la performance, le responsive et la clarté
         de navigation.
@@ -36,7 +34,7 @@ export default function FliteWatchSection() {
               src={fliteWatch1}
               alt={"Flite Watch screenshot 1"}
               width={1200}
-              height={800}
+              height={400}
               className="w-full h-auto object-cover rounded-[1vh]"
               placeholder="blur"
             />
@@ -46,7 +44,7 @@ export default function FliteWatchSection() {
               src={fliteWatch2}
               alt={"Flite Watch screenshot 2"}
               width={1200}
-              height={800}
+              height={400}
               className="w-full h-auto object-cover rounded-[1vh]"
               placeholder="blur"
             />
@@ -56,7 +54,7 @@ export default function FliteWatchSection() {
               src={fliteWatch3}
               alt={"Flite Watch screenshot 3"}
               width={1200}
-              height={800}
+              height={400}
               className="w-full h-auto object-cover rounded-[1vh]"
               placeholder="blur"
             />
@@ -68,9 +66,7 @@ export default function FliteWatchSection() {
         </div>
       </Carousel>
       <a href={"https://www.flitewatch.aero/"} target="_blank" rel="noreferrer">
-        <p className="py-[2vh] lg:py-[4vh] hover:underline text-[1.8vh] sm:text-[2vh]">
-          visitez le site
-        </p>
+        <p className="py-[2vh] lg:py-[4vh] hover:underline">visitez le site</p>
       </a>
     </section>
   );
