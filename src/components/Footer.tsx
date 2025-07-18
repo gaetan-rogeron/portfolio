@@ -5,14 +5,9 @@ import mailLogo from "../../public/images/mail logo.svg";
 
 export default function Footer() {
   return (
-    <footer
-      className="bg-[#262626] text-white px-[2vw] sm:px-[3vw] lg:px-[6vw] py-[4vh] lg:py-[8vh]"
-      id="contact"
-    >
-      <h3 className="text-[2.2vh] sm:text-[2.5vh] lg:text-[3vh] mb-[2vh]">
-        Contact
-      </h3>
-      <h4 className="text-[1.8vh] sm:text-[2vh] lg:text-[2.2vh] mb-[3vh]">
+    <footer className="bg-[#262626] text-white px-[2vw] py-[4vh]" id="contact">
+      <h3 className="mb-[2vh]">Contact</h3>
+      <h4 className="mb-[3vh]">
         Vous avez un projet ou une question ? N&apos;hésitez pas à me contacter
         :
       </h4>
@@ -30,7 +25,7 @@ export default function Footer() {
             height={48}
             className="w-[6vw] h-[6vw] lg:w-[3vw] lg:h-[3vw] rounded-full p-[0.2vw]"
           />
-          <span className="text-[1.8vh] sm:text-[2vh]">Linkedin</span>
+          <span>Linkedin</span>
         </a>
         <a
           href="https://github.com/gaetan-rogeron"
@@ -45,7 +40,7 @@ export default function Footer() {
             height={48}
             className="w-[6vw] h-[6vw] lg:w-[3vw] lg:h-[3vw] rounded-full p-[0.2vw]"
           />
-          <span className="text-[1.8vh] sm:text-[2vh]">GitHub</span>
+          <span>GitHub</span>
         </a>
         <a
           href="mailto:gaetan.dev@pm.me"
@@ -58,7 +53,7 @@ export default function Footer() {
             height={48}
             className="w-[6vw] h-[6vw] lg:w-[3vw] lg:h-[3vw] rounded-full p-[0.2vw]"
           />
-          <span className="text-[1.8vh] sm:text-[2vh]">gaetan.dev@pm.me</span>
+          <span>gaetan.dev@pm.me</span>
         </a>
       </div>
     </footer>

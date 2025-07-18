@@ -5,16 +5,11 @@ import rdvAi5 from "../../../public/images/Rendez-vous-ai/rdv_5.png";
 
 export default function RendezVousAiSection() {
   return (
-    <section
-      className="px-[2vw] sm:px-[3vw] lg:px-[6vw] py-[8vh] lg:py-[16vh] bg-[#f2f2f2]"
-      id="rendezvousai"
-    >
-      <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-[4vh] lg:mb-[8vh] gap-[2vh] sm:gap-0">
-        <h2 className="text-[2.5vh] sm:text-[3vh] lg:text-[3.5vh]">
-          Rendez-vous.ai
-        </h2>
-        <div className="flex justify-end w-full sm:w-auto">
-          <div className="w-[40vw] sm:w-[45vw] lg:w-[55vw] h-[0.2vh] bg-black"></div>
+    <section className="px-[2vw] pb-[8vh] bg-[#f2f2f2]" id="rendezvousai">
+      <div className="flex flex-row items-center justify-between py-[4vh]">
+        <h2>Rendez-vous.ai</h2>
+        <div className="flex justify-end">
+          <div className="w-[20vw] sm:w-[35vw] md:w-[40vw] lg:w-[45vw] xl:v-[55vw] h-[0.2vh] bg-black"></div>
         </div>
       </div>
       <div className="flex flex-col lg:flex-row justify-between items-start gap-[4vh]">
@@ -35,16 +30,16 @@ export default function RendezVousAiSection() {
             className="object-cover w-full rounded-[1vh]"
             placeholder="blur"
           />
-          <p className="text-[1.8vh] sm:text-[2vh]">
+          <p>
             J&apos;ai également contribué au développement des outils permettant
             à l&apos;IA de connaître en temps réel les créneaux disponibles et
             de gérer automatiquement la prise de rendez-vous.
           </p>
-          <p className="text-[1.8vh] sm:text-[2vh]">
+          <p>
             En complément, j&apos;ai pris en charge les fonctionnalités
             suivantes :
           </p>
-          <ul className="list-disc list-inside text-[1.8vh] sm:text-[2vh] space-y-[0.5vh]">
+          <ul className="list-disc list-inside px-[2vw] space-y-[0.5vh]">
             <li>
               Intégration d&apos;un chatbot intelligent relié à l&apos;IA avec
               accès aux outils internes via le serveur Node.js
@@ -62,16 +57,16 @@ export default function RendezVousAiSection() {
           </ul>
         </div>
         <div className="w-full lg:w-[40%] text-justify flex flex-col gap-[3vh]">
-          <p className="text-[1.8vh] sm:text-[2vh]">
+          <p>
             Participation au développement du dashboard SaaS de Rendez-vous.ai,
             une plateforme d&apos;automatisation des appels et de la prise de
             rendez-vous par IA.
           </p>
-          <p className="text-[1.8vh] sm:text-[2vh]">
+          <p>
             J&apos;ai conçu et développé l&apos;ensemble de la gestion des
             événements en interne, reposant sur Payload CMS :
           </p>
-          <ul className="list-disc list-inside text-[1.8vh] sm:text-[2vh] space-y-[0.5vh]">
+          <ul className="list-disc px-[2vw] list-inside space-y-[0.5vh]">
             <li>Calendrier personnalisable (vues jour, semaine, mois)</li>
             <li>Gestion avancée des catégories</li>
             <li>
@@ -97,13 +92,13 @@ export default function RendezVousAiSection() {
         </div>
       </div>
       <div className="px-0 sm:px-[3vw] lg:px-[14vw] pt-[6vh] lg:pt-[10vh]">
-        <p className="pb-[3vh] text-[1.8vh] sm:text-[2vh]">
+        <p className="pb-[3vh]">
           Pour l&apos;ensemble de ces fonctionnalités, j&apos;ai assuré le
           développement frontend, backend et infrastructure, sans recourir à des
           solutions clés-en-main, afin de garantir flexibilité, sécurité et
           maîtrise technique.
         </p>
-        <p className="text-[1.8vh] sm:text-[2vh] mb-[2vh]">
+        <p className="mb-[2vh]">
           Ces réalisations s&apos;inscrivent dans le cadre plus large de
           Rendez-vous.ai, qui propose un agent vocal intelligent disponible 24/7
           pour automatiser la prise d&apos;appels et de rendez-vous.
@@ -114,7 +109,7 @@ export default function RendezVousAiSection() {
           className="hover:underline"
           rel="noreferrer"
         >
-          <p className="text-[1.8vh] sm:text-[2vh]">Site vitrine</p>
+          <p>Site vitrine</p>
         </a>
       </div>
     </section>
