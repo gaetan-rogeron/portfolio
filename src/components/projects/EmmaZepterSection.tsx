@@ -21,8 +21,7 @@ export default function EmazeSection() {
           alt={"Emma Zepter website"}
           width={2000}
           height={2000}
-          className="w-full h-auto rounded-[1vh]"
-          style={{ objectFit: "cover" }}
+          className="w-full h-auto rounded-[1vh] object-cover"
           placeholder="blur"
         />
       </div>

@@ -7,11 +7,11 @@ const bundleAnalyzer = withBundleAnalyzer({
 
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' https://va.vercel-scripts.com;
-  style-src 'self';
+  script-src 'self' 'unsafe-inline' https://va.vercel-scripts.com https://vercel.live;
+  style-src 'self' 'unsafe-inline';
   img-src 'self' data: https:;
   font-src 'self';
-  connect-src 'self' https://vercel-insights.com https://va.vercel-scripts.com;
+  connect-src 'self' https://vercel-insights.com https://va.vercel-scripts.com https://vercel.live;
   frame-ancestors 'none';
 `
   .replace(/\s{2,}/g, " ")

@@ -10,7 +10,7 @@ export default function Header() {
           alt={"Gaëtan Rogeron logo"}
           width={120}
           height={32}
-          style={{ objectFit: "cover" }}
+          className="object-cover"
           priority={true}
         />
         <div>
