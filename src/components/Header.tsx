@@ -15,13 +15,13 @@ export default function Header() {
         />
         <div>
           <nav className="flex flex-col sm:flex-row space-y-[1vh] sm:space-y-0 sm:space-x-[8vw]">
-            <a href="#projects">
-              <h4>Projets</h4>
+            <a href="#projects" className="min-w-[44px] min-h-[44px]">
+              <h4 className="items-center">Projets</h4>
             </a>
-            <a href="#about">
+            <a href="#about" className="min-w-[44px] min-h-[44px]">
               <h4>À propos</h4>
             </a>
-            <a href="#contact">
+            <a href="#contact" className="min-w-[44px] min-h-[44px]">
               <h4>Contact</h4>
             </a>
           </nav>

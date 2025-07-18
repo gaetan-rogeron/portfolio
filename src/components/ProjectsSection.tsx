@@ -83,8 +83,14 @@ export default function ProjectsSection() {
               <ProjectCarouselItem key={project.id} project={project} />
             ))}
           </CarouselContent>
-          <CarouselPrevious variant="default" className="left-[1vw]" />
-          <CarouselNext variant="default" className="right-[1vw]" />
+          <CarouselPrevious
+            variant="default"
+            className="left-[1vw] min-w-[44px] min-h-[44px]"
+          />
+          <CarouselNext
+            variant="default"
+            className="right-[1vw] min-w-[44px] min-h-[44px]"
+          />
         </Carousel>
       </div>
     </section>

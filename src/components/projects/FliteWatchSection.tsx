@@ -66,7 +66,9 @@ export default function FliteWatchSection() {
         </div>
       </Carousel>
       <a href={"https://www.flitewatch.aero/"} target="_blank" rel="noreferrer">
-        <p className="py-[2vh] lg:py-[4vh] hover:underline">visitez le site</p>
+        <p className="py-[2vh] lg:py-[4vh] hover:underline min-w-[44px] min-h-[44px]">
+          visitez le site
+        </p>
       </a>
     </section>
   );

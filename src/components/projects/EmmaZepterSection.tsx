@@ -29,7 +29,7 @@ export default function EmazeSection() {
       <a
         href="https://www.emmazepter.com/"
         target="_blank"
-        className="flex py-[2vh] hover:underline justify-end"
+        className="flex py-[2vh] hover:underline justify-end min-w-[44px] min-h-[44px]"
         rel="noreferrer"
       >
         <p>visitez le site</p>

@@ -106,7 +106,7 @@ export default function RendezVousAiSection() {
         <a
           href="https://rendez-vous.ai/"
           target="_blank"
-          className="hover:underline"
+          className="hover:underline min-w-[44px] min-h-[44px]"
           rel="noreferrer"
         >
           <p>Site vitrine</p>
