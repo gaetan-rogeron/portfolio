@@ -70,7 +70,7 @@ export default function AbsolumentParfumeurSection() {
         </div>
       </Carousel>
       <h5 className=" py-[3vh]">
-        Le déploiement est en cours, la mise en ligne est prévue prochainement.
+        <a href="https://www.absolument-parfumeur.fr/" target="_blank">Lien vers le site.</a>
       </h5>
       <ul className="list-disc list-inside py-[3vh] px-[2vw] space-y-[1vh]">
         <li>Mise en place du backend avec PostgreSQL et Payload CMS</li>
